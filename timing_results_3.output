@@ -1,0 +1,628 @@
+lexicase	random_population	1000
+aarch64 Mac OS X 12.6 8 cpu(s)
+OpenJDK 64-Bit Server VM 18.0.2.1+0
+Runtime arguments: -Dfile.encoding=UTF-8 -XX:-OmitStackTraceInFastThrow -XX:+TieredCompilation -XX:TieredStopAtLevel=1 -Dclojure.compile.path=/Users/mcphee/Documents/Year_of_Programming/lexicase-timing-study/target/default/classes -Dlexicase-timing-study.version=0.1.0-SNAPSHOT -Dclojure.debug=false
+Evaluation count : 2640 in 60 samples of 44 calls.
+      Execution time sample mean : 22.755378 ms
+             Execution time mean : 22.758128 ms
+Execution time sample std-deviation : 410.163330 µs
+    Execution time std-deviation : 414.466126 µs
+   Execution time lower quantile : 21.977332 ms ( 2.5%)
+   Execution time upper quantile : 23.403253 ms (97.5%)
+                   Overhead used : 5.950958 ns
+lexicase w/o grouping	random_population	1000
+aarch64 Mac OS X 12.6 8 cpu(s)
+OpenJDK 64-Bit Server VM 18.0.2.1+0
+Runtime arguments: -Dfile.encoding=UTF-8 -XX:-OmitStackTraceInFastThrow -XX:+TieredCompilation -XX:TieredStopAtLevel=1 -Dclojure.compile.path=/Users/mcphee/Documents/Year_of_Programming/lexicase-timing-study/target/default/classes -Dlexicase-timing-study.version=0.1.0-SNAPSHOT -Dclojure.debug=false
+Evaluation count : 12000 in 60 samples of 200 calls.
+      Execution time sample mean : 5.127798 ms
+             Execution time mean : 5.128101 ms
+Execution time sample std-deviation : 186.182220 µs
+    Execution time std-deviation : 189.141072 µs
+   Execution time lower quantile : 4.769788 ms ( 2.5%)
+   Execution time upper quantile : 5.476705 ms (97.5%)
+                   Overhead used : 5.950958 ns
+lexicase single pass	random_population	1000
+aarch64 Mac OS X 12.6 8 cpu(s)
+OpenJDK 64-Bit Server VM 18.0.2.1+0
+Runtime arguments: -Dfile.encoding=UTF-8 -XX:-OmitStackTraceInFastThrow -XX:+TieredCompilation -XX:TieredStopAtLevel=1 -Dclojure.compile.path=/Users/mcphee/Documents/Year_of_Programming/lexicase-timing-study/target/default/classes -Dlexicase-timing-study.version=0.1.0-SNAPSHOT -Dclojure.debug=false
+Evaluation count : 10980 in 60 samples of 183 calls.
+      Execution time sample mean : 5.329642 ms
+             Execution time mean : 5.326548 ms
+Execution time sample std-deviation : 360.092441 µs
+    Execution time std-deviation : 364.880417 µs
+   Execution time lower quantile : 4.736753 ms ( 2.5%)
+   Execution time upper quantile : 5.850735 ms (97.5%)
+                   Overhead used : 5.950958 ns
+lexicase	uniform_population	1
+aarch64 Mac OS X 12.6 8 cpu(s)
+OpenJDK 64-Bit Server VM 18.0.2.1+0
+Runtime arguments: -Dfile.encoding=UTF-8 -XX:-OmitStackTraceInFastThrow -XX:+TieredCompilation -XX:TieredStopAtLevel=1 -Dclojure.compile.path=/Users/mcphee/Documents/Year_of_Programming/lexicase-timing-study/target/default/classes -Dlexicase-timing-study.version=0.1.0-SNAPSHOT -Dclojure.debug=false
+Evaluation count : 676500 in 60 samples of 11275 calls.
+      Execution time sample mean : 88.875739 µs
+             Execution time mean : 88.876073 µs
+Execution time sample std-deviation : 217.229144 ns
+    Execution time std-deviation : 222.475354 ns
+   Execution time lower quantile : 88.580867 µs ( 2.5%)
+   Execution time upper quantile : 89.303751 µs (97.5%)
+                   Overhead used : 5.950958 ns
+
+Found 2 outliers in 60 samples (3.3333 %)
+	low-severe	 1 (1.6667 %)
+	low-mild	 1 (1.6667 %)
+ Variance from outliers : 1.6389 % Variance is slightly inflated by outliers
+lexicase w/o grouping	uniform_population	1
+aarch64 Mac OS X 12.6 8 cpu(s)
+OpenJDK 64-Bit Server VM 18.0.2.1+0
+Runtime arguments: -Dfile.encoding=UTF-8 -XX:-OmitStackTraceInFastThrow -XX:+TieredCompilation -XX:TieredStopAtLevel=1 -Dclojure.compile.path=/Users/mcphee/Documents/Year_of_Programming/lexicase-timing-study/target/default/classes -Dlexicase-timing-study.version=0.1.0-SNAPSHOT -Dclojure.debug=false
+Evaluation count : 180 in 60 samples of 3 calls.
+      Execution time sample mean : 481.163196 ms
+             Execution time mean : 481.159735 ms
+Execution time sample std-deviation : 2.157628 ms
+    Execution time std-deviation : 2.192898 ms
+   Execution time lower quantile : 477.118838 ms ( 2.5%)
+   Execution time upper quantile : 485.006805 ms (97.5%)
+                   Overhead used : 5.950958 ns
+
+Found 1 outliers in 60 samples (1.6667 %)
+	low-severe	 1 (1.6667 %)
+ Variance from outliers : 1.6389 % Variance is slightly inflated by outliers
+lexicase single pass	uniform_population	1
+aarch64 Mac OS X 12.6 8 cpu(s)
+OpenJDK 64-Bit Server VM 18.0.2.1+0
+Runtime arguments: -Dfile.encoding=UTF-8 -XX:-OmitStackTraceInFastThrow -XX:+TieredCompilation -XX:TieredStopAtLevel=1 -Dclojure.compile.path=/Users/mcphee/Documents/Year_of_Programming/lexicase-timing-study/target/default/classes -Dlexicase-timing-study.version=0.1.0-SNAPSHOT -Dclojure.debug=false
+Evaluation count : 180 in 60 samples of 3 calls.
+      Execution time sample mean : 460.024705 ms
+             Execution time mean : 459.980266 ms
+Execution time sample std-deviation : 3.735985 ms
+    Execution time std-deviation : 3.819497 ms
+   Execution time lower quantile : 453.362064 ms ( 2.5%)
+   Execution time upper quantile : 465.650358 ms (97.5%)
+                   Overhead used : 5.950958 ns
+
+Found 1 outliers in 60 samples (1.6667 %)
+	low-severe	 1 (1.6667 %)
+ Variance from outliers : 1.6389 % Variance is slightly inflated by outliers
+lexicase	50/50_population	2
+aarch64 Mac OS X 12.6 8 cpu(s)
+OpenJDK 64-Bit Server VM 18.0.2.1+0
+Runtime arguments: -Dfile.encoding=UTF-8 -XX:-OmitStackTraceInFastThrow -XX:+TieredCompilation -XX:TieredStopAtLevel=1 -Dclojure.compile.path=/Users/mcphee/Documents/Year_of_Programming/lexicase-timing-study/target/default/classes -Dlexicase-timing-study.version=0.1.0-SNAPSHOT -Dclojure.debug=false
+Evaluation count : 282900 in 60 samples of 4715 calls.
+      Execution time sample mean : 212.199485 µs
+             Execution time mean : 212.203804 µs
+Execution time sample std-deviation : 542.926297 ns
+    Execution time std-deviation : 557.829714 ns
+   Execution time lower quantile : 211.106576 µs ( 2.5%)
+   Execution time upper quantile : 213.306146 µs (97.5%)
+                   Overhead used : 5.950958 ns
+
+Found 3 outliers in 60 samples (5.0000 %)
+	low-severe	 1 (1.6667 %)
+	low-mild	 2 (3.3333 %)
+ Variance from outliers : 1.6389 % Variance is slightly inflated by outliers
+lexicase w/o grouping	50/50_population	2
+aarch64 Mac OS X 12.6 8 cpu(s)
+OpenJDK 64-Bit Server VM 18.0.2.1+0
+Runtime arguments: -Dfile.encoding=UTF-8 -XX:-OmitStackTraceInFastThrow -XX:+TieredCompilation -XX:TieredStopAtLevel=1 -Dclojure.compile.path=/Users/mcphee/Documents/Year_of_Programming/lexicase-timing-study/target/default/classes -Dlexicase-timing-study.version=0.1.0-SNAPSHOT -Dclojure.debug=false
+Evaluation count : 300 in 60 samples of 5 calls.
+      Execution time sample mean : 232.311314 ms
+             Execution time mean : 232.303390 ms
+Execution time sample std-deviation : 1.703648 ms
+    Execution time std-deviation : 1.716532 ms
+   Execution time lower quantile : 229.855711 ms ( 2.5%)
+   Execution time upper quantile : 235.143828 ms (97.5%)
+                   Overhead used : 5.950958 ns
+lexicase single pass	50/50_population	2
+aarch64 Mac OS X 12.6 8 cpu(s)
+OpenJDK 64-Bit Server VM 18.0.2.1+0
+Runtime arguments: -Dfile.encoding=UTF-8 -XX:-OmitStackTraceInFastThrow -XX:+TieredCompilation -XX:TieredStopAtLevel=1 -Dclojure.compile.path=/Users/mcphee/Documents/Year_of_Programming/lexicase-timing-study/target/default/classes -Dlexicase-timing-study.version=0.1.0-SNAPSHOT -Dclojure.debug=false
+Evaluation count : 300 in 60 samples of 5 calls.
+      Execution time sample mean : 231.378326 ms
+             Execution time mean : 231.368989 ms
+Execution time sample std-deviation : 1.847218 ms
+    Execution time std-deviation : 1.860728 ms
+   Execution time lower quantile : 228.524428 ms ( 2.5%)
+   Execution time upper quantile : 234.176576 ms (97.5%)
+                   Overhead used : 5.950958 ns
+lexicase	80/20_population	2
+aarch64 Mac OS X 12.6 8 cpu(s)
+OpenJDK 64-Bit Server VM 18.0.2.1+0
+Runtime arguments: -Dfile.encoding=UTF-8 -XX:-OmitStackTraceInFastThrow -XX:+TieredCompilation -XX:TieredStopAtLevel=1 -Dclojure.compile.path=/Users/mcphee/Documents/Year_of_Programming/lexicase-timing-study/target/default/classes -Dlexicase-timing-study.version=0.1.0-SNAPSHOT -Dclojure.debug=false
+Evaluation count : 220920 in 60 samples of 3682 calls.
+      Execution time sample mean : 271.207133 µs
+             Execution time mean : 271.203596 µs
+Execution time sample std-deviation : 978.923068 ns
+    Execution time std-deviation : 989.705096 ns
+   Execution time lower quantile : 269.431144 µs ( 2.5%)
+   Execution time upper quantile : 273.122672 µs (97.5%)
+                   Overhead used : 5.950958 ns
+lexicase w/o grouping	80/20_population	2
+aarch64 Mac OS X 12.6 8 cpu(s)
+OpenJDK 64-Bit Server VM 18.0.2.1+0
+Runtime arguments: -Dfile.encoding=UTF-8 -XX:-OmitStackTraceInFastThrow -XX:+TieredCompilation -XX:TieredStopAtLevel=1 -Dclojure.compile.path=/Users/mcphee/Documents/Year_of_Programming/lexicase-timing-study/target/default/classes -Dlexicase-timing-study.version=0.1.0-SNAPSHOT -Dclojure.debug=false
+Evaluation count : 420 in 60 samples of 7 calls.
+      Execution time sample mean : 239.905554 ms
+             Execution time mean : 239.853189 ms
+Execution time sample std-deviation : 46.398385 ms
+    Execution time std-deviation : 47.241269 ms
+   Execution time lower quantile : 134.585762 ms ( 2.5%)
+   Execution time upper quantile : 328.008441 ms (97.5%)
+                   Overhead used : 5.950958 ns
+
+Found 6 outliers in 60 samples (10.0000 %)
+	low-severe	 2 (3.3333 %)
+	low-mild	 4 (6.6667 %)
+ Variance from outliers : 91.1026 % Variance is severely inflated by outliers
+lexicase single pass	80/20_population	2
+aarch64 Mac OS X 12.6 8 cpu(s)
+OpenJDK 64-Bit Server VM 18.0.2.1+0
+Runtime arguments: -Dfile.encoding=UTF-8 -XX:-OmitStackTraceInFastThrow -XX:+TieredCompilation -XX:TieredStopAtLevel=1 -Dclojure.compile.path=/Users/mcphee/Documents/Year_of_Programming/lexicase-timing-study/target/default/classes -Dlexicase-timing-study.version=0.1.0-SNAPSHOT -Dclojure.debug=false
+Evaluation count : 240 in 60 samples of 4 calls.
+      Execution time sample mean : 234.722532 ms
+             Execution time mean : 234.507052 ms
+Execution time sample std-deviation : 64.512628 ms
+    Execution time std-deviation : 65.487953 ms
+   Execution time lower quantile : 93.826963 ms ( 2.5%)
+   Execution time upper quantile : 334.782596 ms (97.5%)
+                   Overhead used : 5.950958 ns
+
+Found 5 outliers in 60 samples (8.3333 %)
+	low-severe	 5 (8.3333 %)
+ Variance from outliers : 94.6986 % Variance is severely inflated by outliers
+lexicase	50/rand-50_population	501
+aarch64 Mac OS X 12.6 8 cpu(s)
+OpenJDK 64-Bit Server VM 18.0.2.1+0
+Runtime arguments: -Dfile.encoding=UTF-8 -XX:-OmitStackTraceInFastThrow -XX:+TieredCompilation -XX:TieredStopAtLevel=1 -Dclojure.compile.path=/Users/mcphee/Documents/Year_of_Programming/lexicase-timing-study/target/default/classes -Dlexicase-timing-study.version=0.1.0-SNAPSHOT -Dclojure.debug=false
+Evaluation count : 3480 in 60 samples of 58 calls.
+      Execution time sample mean : 17.670748 ms
+             Execution time mean : 17.676521 ms
+Execution time sample std-deviation : 464.094953 µs
+    Execution time std-deviation : 507.430961 µs
+   Execution time lower quantile : 17.211411 ms ( 2.5%)
+   Execution time upper quantile : 18.747498 ms (97.5%)
+                   Overhead used : 5.950958 ns
+
+Found 2 outliers in 60 samples (3.3333 %)
+	low-severe	 2 (3.3333 %)
+ Variance from outliers : 15.7888 % Variance is moderately inflated by outliers
+lexicase w/o grouping	50/rand-50_population	501
+aarch64 Mac OS X 12.6 8 cpu(s)
+OpenJDK 64-Bit Server VM 18.0.2.1+0
+Runtime arguments: -Dfile.encoding=UTF-8 -XX:-OmitStackTraceInFastThrow -XX:+TieredCompilation -XX:TieredStopAtLevel=1 -Dclojure.compile.path=/Users/mcphee/Documents/Year_of_Programming/lexicase-timing-study/target/default/classes -Dlexicase-timing-study.version=0.1.0-SNAPSHOT -Dclojure.debug=false
+Evaluation count : 13140 in 60 samples of 219 calls.
+      Execution time sample mean : 5.524227 ms
+             Execution time mean : 5.532451 ms
+Execution time sample std-deviation : 924.441744 µs
+    Execution time std-deviation : 929.861727 µs
+   Execution time lower quantile : 4.611623 ms ( 2.5%)
+   Execution time upper quantile : 7.523563 ms (97.5%)
+                   Overhead used : 5.950958 ns
+
+Found 2 outliers in 60 samples (3.3333 %)
+	low-severe	 2 (3.3333 %)
+ Variance from outliers : 87.6140 % Variance is severely inflated by outliers
+lexicase single pass	50/rand-50_population	501
+aarch64 Mac OS X 12.6 8 cpu(s)
+OpenJDK 64-Bit Server VM 18.0.2.1+0
+Runtime arguments: -Dfile.encoding=UTF-8 -XX:-OmitStackTraceInFastThrow -XX:+TieredCompilation -XX:TieredStopAtLevel=1 -Dclojure.compile.path=/Users/mcphee/Documents/Year_of_Programming/lexicase-timing-study/target/default/classes -Dlexicase-timing-study.version=0.1.0-SNAPSHOT -Dclojure.debug=false
+Evaluation count : 9660 in 60 samples of 161 calls.
+      Execution time sample mean : 5.446220 ms
+             Execution time mean : 5.448142 ms
+Execution time sample std-deviation : 873.927589 µs
+    Execution time std-deviation : 884.437814 µs
+   Execution time lower quantile : 4.629876 ms ( 2.5%)
+   Execution time upper quantile : 7.547504 ms (97.5%)
+                   Overhead used : 5.950958 ns
+lexicase	80/rand-20_population	801
+aarch64 Mac OS X 12.6 8 cpu(s)
+OpenJDK 64-Bit Server VM 18.0.2.1+0
+Runtime arguments: -Dfile.encoding=UTF-8 -XX:-OmitStackTraceInFastThrow -XX:+TieredCompilation -XX:TieredStopAtLevel=1 -Dclojure.compile.path=/Users/mcphee/Documents/Year_of_Programming/lexicase-timing-study/target/default/classes -Dlexicase-timing-study.version=0.1.0-SNAPSHOT -Dclojure.debug=false
+Evaluation count : 4020 in 60 samples of 67 calls.
+      Execution time sample mean : 14.933788 ms
+             Execution time mean : 14.934327 ms
+Execution time sample std-deviation : 127.960937 µs
+    Execution time std-deviation : 129.857423 µs
+   Execution time lower quantile : 14.721776 ms ( 2.5%)
+   Execution time upper quantile : 15.107628 ms (97.5%)
+                   Overhead used : 5.950958 ns
+lexicase w/o grouping	80/rand-20_population	801
+aarch64 Mac OS X 12.6 8 cpu(s)
+OpenJDK 64-Bit Server VM 18.0.2.1+0
+Runtime arguments: -Dfile.encoding=UTF-8 -XX:-OmitStackTraceInFastThrow -XX:+TieredCompilation -XX:TieredStopAtLevel=1 -Dclojure.compile.path=/Users/mcphee/Documents/Year_of_Programming/lexicase-timing-study/target/default/classes -Dlexicase-timing-study.version=0.1.0-SNAPSHOT -Dclojure.debug=false
+Evaluation count : 8880 in 60 samples of 148 calls.
+      Execution time sample mean : 5.388831 ms
+             Execution time mean : 5.395739 ms
+Execution time sample std-deviation : 1.137352 ms
+    Execution time std-deviation : 1.153199 ms
+   Execution time lower quantile : 4.405410 ms ( 2.5%)
+   Execution time upper quantile : 7.452463 ms (97.5%)
+                   Overhead used : 5.950958 ns
+
+Found 13 outliers in 60 samples (21.6667 %)
+	low-severe	 13 (21.6667 %)
+ Variance from outliers : 91.1876 % Variance is severely inflated by outliers
+lexicase single pass	80/rand-20_population	801
+aarch64 Mac OS X 12.6 8 cpu(s)
+OpenJDK 64-Bit Server VM 18.0.2.1+0
+Runtime arguments: -Dfile.encoding=UTF-8 -XX:-OmitStackTraceInFastThrow -XX:+TieredCompilation -XX:TieredStopAtLevel=1 -Dclojure.compile.path=/Users/mcphee/Documents/Year_of_Programming/lexicase-timing-study/target/default/classes -Dlexicase-timing-study.version=0.1.0-SNAPSHOT -Dclojure.debug=false
+Evaluation count : 13500 in 60 samples of 225 calls.
+      Execution time sample mean : 5.452198 ms
+             Execution time mean : 5.455674 ms
+Execution time sample std-deviation : 845.932968 µs
+    Execution time std-deviation : 856.893237 µs
+   Execution time lower quantile : 4.517351 ms ( 2.5%)
+   Execution time upper quantile : 7.248448 ms (97.5%)
+                   Overhead used : 5.950958 ns
+lexicase	10_random_values_population	10
+aarch64 Mac OS X 12.6 8 cpu(s)
+OpenJDK 64-Bit Server VM 18.0.2.1+0
+Runtime arguments: -Dfile.encoding=UTF-8 -XX:-OmitStackTraceInFastThrow -XX:+TieredCompilation -XX:TieredStopAtLevel=1 -Dclojure.compile.path=/Users/mcphee/Documents/Year_of_Programming/lexicase-timing-study/target/default/classes -Dlexicase-timing-study.version=0.1.0-SNAPSHOT -Dclojure.debug=false
+Evaluation count : 4320 in 60 samples of 72 calls.
+      Execution time sample mean : 13.849552 ms
+             Execution time mean : 13.848670 ms
+Execution time sample std-deviation : 99.011665 µs
+    Execution time std-deviation : 99.782262 µs
+   Execution time lower quantile : 13.677422 ms ( 2.5%)
+   Execution time upper quantile : 13.993292 ms (97.5%)
+                   Overhead used : 5.950958 ns
+lexicase w/o grouping	10_random_values_population	10
+aarch64 Mac OS X 12.6 8 cpu(s)
+OpenJDK 64-Bit Server VM 18.0.2.1+0
+Runtime arguments: -Dfile.encoding=UTF-8 -XX:-OmitStackTraceInFastThrow -XX:+TieredCompilation -XX:TieredStopAtLevel=1 -Dclojure.compile.path=/Users/mcphee/Documents/Year_of_Programming/lexicase-timing-study/target/default/classes -Dlexicase-timing-study.version=0.1.0-SNAPSHOT -Dclojure.debug=false
+Evaluation count : 1260 in 60 samples of 21 calls.
+      Execution time sample mean : 51.324580 ms
+             Execution time mean : 51.324822 ms
+Execution time sample std-deviation : 638.103426 µs
+    Execution time std-deviation : 643.961510 µs
+   Execution time lower quantile : 50.071504 ms ( 2.5%)
+   Execution time upper quantile : 52.586191 ms (97.5%)
+                   Overhead used : 5.950958 ns
+lexicase single pass	10_random_values_population	10
+aarch64 Mac OS X 12.6 8 cpu(s)
+OpenJDK 64-Bit Server VM 18.0.2.1+0
+Runtime arguments: -Dfile.encoding=UTF-8 -XX:-OmitStackTraceInFastThrow -XX:+TieredCompilation -XX:TieredStopAtLevel=1 -Dclojure.compile.path=/Users/mcphee/Documents/Year_of_Programming/lexicase-timing-study/target/default/classes -Dlexicase-timing-study.version=0.1.0-SNAPSHOT -Dclojure.debug=false
+Evaluation count : 1260 in 60 samples of 21 calls.
+      Execution time sample mean : 49.686031 ms
+             Execution time mean : 49.686883 ms
+Execution time sample std-deviation : 589.920463 µs
+    Execution time std-deviation : 598.822147 µs
+   Execution time lower quantile : 48.628681 ms ( 2.5%)
+   Execution time upper quantile : 50.694967 ms (97.5%)
+                   Overhead used : 5.950958 ns
+lexicase	20_random_values_population	20
+aarch64 Mac OS X 12.6 8 cpu(s)
+OpenJDK 64-Bit Server VM 18.0.2.1+0
+Runtime arguments: -Dfile.encoding=UTF-8 -XX:-OmitStackTraceInFastThrow -XX:+TieredCompilation -XX:TieredStopAtLevel=1 -Dclojure.compile.path=/Users/mcphee/Documents/Year_of_Programming/lexicase-timing-study/target/default/classes -Dlexicase-timing-study.version=0.1.0-SNAPSHOT -Dclojure.debug=false
+Evaluation count : 4320 in 60 samples of 72 calls.
+      Execution time sample mean : 13.970477 ms
+             Execution time mean : 13.971449 ms
+Execution time sample std-deviation : 104.311696 µs
+    Execution time std-deviation : 105.346325 µs
+   Execution time lower quantile : 13.834638 ms ( 2.5%)
+   Execution time upper quantile : 14.129888 ms (97.5%)
+                   Overhead used : 5.950958 ns
+lexicase w/o grouping	20_random_values_population	20
+aarch64 Mac OS X 12.6 8 cpu(s)
+OpenJDK 64-Bit Server VM 18.0.2.1+0
+Runtime arguments: -Dfile.encoding=UTF-8 -XX:-OmitStackTraceInFastThrow -XX:+TieredCompilation -XX:TieredStopAtLevel=1 -Dclojure.compile.path=/Users/mcphee/Documents/Year_of_Programming/lexicase-timing-study/target/default/classes -Dlexicase-timing-study.version=0.1.0-SNAPSHOT -Dclojure.debug=false
+Evaluation count : 2160 in 60 samples of 36 calls.
+      Execution time sample mean : 28.317475 ms
+             Execution time mean : 28.315516 ms
+Execution time sample std-deviation : 449.689573 µs
+    Execution time std-deviation : 451.227414 µs
+   Execution time lower quantile : 27.366067 ms ( 2.5%)
+   Execution time upper quantile : 29.197644 ms (97.5%)
+                   Overhead used : 5.950958 ns
+lexicase single pass	20_random_values_population	20
+aarch64 Mac OS X 12.6 8 cpu(s)
+OpenJDK 64-Bit Server VM 18.0.2.1+0
+Runtime arguments: -Dfile.encoding=UTF-8 -XX:-OmitStackTraceInFastThrow -XX:+TieredCompilation -XX:TieredStopAtLevel=1 -Dclojure.compile.path=/Users/mcphee/Documents/Year_of_Programming/lexicase-timing-study/target/default/classes -Dlexicase-timing-study.version=0.1.0-SNAPSHOT -Dclojure.debug=false
+Evaluation count : 2340 in 60 samples of 39 calls.
+      Execution time sample mean : 26.985797 ms
+             Execution time mean : 26.984810 ms
+Execution time sample std-deviation : 465.354714 µs
+    Execution time std-deviation : 471.939727 µs
+   Execution time lower quantile : 26.191873 ms ( 2.5%)
+   Execution time upper quantile : 27.821528 ms (97.5%)
+                   Overhead used : 5.950958 ns
+lexicase	25_random_values_population	25
+aarch64 Mac OS X 12.6 8 cpu(s)
+OpenJDK 64-Bit Server VM 18.0.2.1+0
+Runtime arguments: -Dfile.encoding=UTF-8 -XX:-OmitStackTraceInFastThrow -XX:+TieredCompilation -XX:TieredStopAtLevel=1 -Dclojure.compile.path=/Users/mcphee/Documents/Year_of_Programming/lexicase-timing-study/target/default/classes -Dlexicase-timing-study.version=0.1.0-SNAPSHOT -Dclojure.debug=false
+Evaluation count : 4320 in 60 samples of 72 calls.
+      Execution time sample mean : 14.073722 ms
+             Execution time mean : 14.074069 ms
+Execution time sample std-deviation : 110.460789 µs
+    Execution time std-deviation : 110.939450 µs
+   Execution time lower quantile : 13.939720 ms ( 2.5%)
+   Execution time upper quantile : 14.260186 ms (97.5%)
+                   Overhead used : 5.950958 ns
+lexicase w/o grouping	25_random_values_population	25
+aarch64 Mac OS X 12.6 8 cpu(s)
+OpenJDK 64-Bit Server VM 18.0.2.1+0
+Runtime arguments: -Dfile.encoding=UTF-8 -XX:-OmitStackTraceInFastThrow -XX:+TieredCompilation -XX:TieredStopAtLevel=1 -Dclojure.compile.path=/Users/mcphee/Documents/Year_of_Programming/lexicase-timing-study/target/default/classes -Dlexicase-timing-study.version=0.1.0-SNAPSHOT -Dclojure.debug=false
+Evaluation count : 2580 in 60 samples of 43 calls.
+      Execution time sample mean : 23.826685 ms
+             Execution time mean : 23.829993 ms
+Execution time sample std-deviation : 402.298459 µs
+    Execution time std-deviation : 410.964356 µs
+   Execution time lower quantile : 22.855459 ms ( 2.5%)
+   Execution time upper quantile : 24.576600 ms (97.5%)
+                   Overhead used : 5.950958 ns
+
+Found 3 outliers in 60 samples (5.0000 %)
+	low-severe	 2 (3.3333 %)
+	low-mild	 1 (1.6667 %)
+ Variance from outliers : 6.2775 % Variance is slightly inflated by outliers
+lexicase single pass	25_random_values_population	25
+aarch64 Mac OS X 12.6 8 cpu(s)
+OpenJDK 64-Bit Server VM 18.0.2.1+0
+Runtime arguments: -Dfile.encoding=UTF-8 -XX:-OmitStackTraceInFastThrow -XX:+TieredCompilation -XX:TieredStopAtLevel=1 -Dclojure.compile.path=/Users/mcphee/Documents/Year_of_Programming/lexicase-timing-study/target/default/classes -Dlexicase-timing-study.version=0.1.0-SNAPSHOT -Dclojure.debug=false
+Evaluation count : 2760 in 60 samples of 46 calls.
+      Execution time sample mean : 22.383472 ms
+             Execution time mean : 22.381498 ms
+Execution time sample std-deviation : 394.749164 µs
+    Execution time std-deviation : 396.791645 µs
+   Execution time lower quantile : 21.610838 ms ( 2.5%)
+   Execution time upper quantile : 23.077695 ms (97.5%)
+                   Overhead used : 5.950958 ns
+lexicase	40_random_values_population	40
+aarch64 Mac OS X 12.6 8 cpu(s)
+OpenJDK 64-Bit Server VM 18.0.2.1+0
+Runtime arguments: -Dfile.encoding=UTF-8 -XX:-OmitStackTraceInFastThrow -XX:+TieredCompilation -XX:TieredStopAtLevel=1 -Dclojure.compile.path=/Users/mcphee/Documents/Year_of_Programming/lexicase-timing-study/target/default/classes -Dlexicase-timing-study.version=0.1.0-SNAPSHOT -Dclojure.debug=false
+Evaluation count : 4260 in 60 samples of 71 calls.
+      Execution time sample mean : 14.371193 ms
+             Execution time mean : 14.382777 ms
+Execution time sample std-deviation : 818.400252 µs
+    Execution time std-deviation : 833.377583 µs
+   Execution time lower quantile : 14.031705 ms ( 2.5%)
+   Execution time upper quantile : 15.636693 ms (97.5%)
+                   Overhead used : 5.950958 ns
+
+Found 7 outliers in 60 samples (11.6667 %)
+	low-severe	 2 (3.3333 %)
+	low-mild	 5 (8.3333 %)
+ Variance from outliers : 43.4293 % Variance is moderately inflated by outliers
+lexicase w/o grouping	40_random_values_population	40
+aarch64 Mac OS X 12.6 8 cpu(s)
+OpenJDK 64-Bit Server VM 18.0.2.1+0
+Runtime arguments: -Dfile.encoding=UTF-8 -XX:-OmitStackTraceInFastThrow -XX:+TieredCompilation -XX:TieredStopAtLevel=1 -Dclojure.compile.path=/Users/mcphee/Documents/Year_of_Programming/lexicase-timing-study/target/default/classes -Dlexicase-timing-study.version=0.1.0-SNAPSHOT -Dclojure.debug=false
+Evaluation count : 1800 in 60 samples of 30 calls.
+      Execution time sample mean : 27.398435 ms
+             Execution time mean : 27.419756 ms
+Execution time sample std-deviation : 1.381714 ms
+    Execution time std-deviation : 1.393881 ms
+   Execution time lower quantile : 25.797276 ms ( 2.5%)
+   Execution time upper quantile : 28.519988 ms (97.5%)
+                   Overhead used : 5.950958 ns
+
+Found 1 outliers in 60 samples (1.6667 %)
+	low-severe	 1 (1.6667 %)
+ Variance from outliers : 36.8525 % Variance is moderately inflated by outliers
+lexicase single pass	40_random_values_population	40
+aarch64 Mac OS X 12.6 8 cpu(s)
+OpenJDK 64-Bit Server VM 18.0.2.1+0
+Runtime arguments: -Dfile.encoding=UTF-8 -XX:-OmitStackTraceInFastThrow -XX:+TieredCompilation -XX:TieredStopAtLevel=1 -Dclojure.compile.path=/Users/mcphee/Documents/Year_of_Programming/lexicase-timing-study/target/default/classes -Dlexicase-timing-study.version=0.1.0-SNAPSHOT -Dclojure.debug=false
+Evaluation count : 3600 in 60 samples of 60 calls.
+      Execution time sample mean : 17.500600 ms
+             Execution time mean : 17.497115 ms
+Execution time sample std-deviation : 543.259065 µs
+    Execution time std-deviation : 555.343898 µs
+   Execution time lower quantile : 15.819085 ms ( 2.5%)
+   Execution time upper quantile : 18.163046 ms (97.5%)
+                   Overhead used : 5.950958 ns
+
+Found 4 outliers in 60 samples (6.6667 %)
+	low-severe	 2 (3.3333 %)
+	low-mild	 2 (3.3333 %)
+ Variance from outliers : 18.9660 % Variance is moderately inflated by outliers
+lexicase	50_random_values_population	50
+aarch64 Mac OS X 12.6 8 cpu(s)
+OpenJDK 64-Bit Server VM 18.0.2.1+0
+Runtime arguments: -Dfile.encoding=UTF-8 -XX:-OmitStackTraceInFastThrow -XX:+TieredCompilation -XX:TieredStopAtLevel=1 -Dclojure.compile.path=/Users/mcphee/Documents/Year_of_Programming/lexicase-timing-study/target/default/classes -Dlexicase-timing-study.version=0.1.0-SNAPSHOT -Dclojure.debug=false
+Evaluation count : 4260 in 60 samples of 71 calls.
+      Execution time sample mean : 14.261245 ms
+             Execution time mean : 14.260923 ms
+Execution time sample std-deviation : 98.551102 µs
+    Execution time std-deviation : 99.613644 µs
+   Execution time lower quantile : 14.108860 ms ( 2.5%)
+   Execution time upper quantile : 14.412259 ms (97.5%)
+                   Overhead used : 5.950958 ns
+lexicase w/o grouping	50_random_values_population	50
+aarch64 Mac OS X 12.6 8 cpu(s)
+OpenJDK 64-Bit Server VM 18.0.2.1+0
+Runtime arguments: -Dfile.encoding=UTF-8 -XX:-OmitStackTraceInFastThrow -XX:+TieredCompilation -XX:TieredStopAtLevel=1 -Dclojure.compile.path=/Users/mcphee/Documents/Year_of_Programming/lexicase-timing-study/target/default/classes -Dlexicase-timing-study.version=0.1.0-SNAPSHOT -Dclojure.debug=false
+Evaluation count : 4200 in 60 samples of 70 calls.
+      Execution time sample mean : 14.245526 ms
+             Execution time mean : 14.244481 ms
+Execution time sample std-deviation : 244.108690 µs
+    Execution time std-deviation : 245.835689 µs
+   Execution time lower quantile : 13.771451 ms ( 2.5%)
+   Execution time upper quantile : 14.651005 ms (97.5%)
+                   Overhead used : 5.950958 ns
+lexicase single pass	50_random_values_population	50
+aarch64 Mac OS X 12.6 8 cpu(s)
+OpenJDK 64-Bit Server VM 18.0.2.1+0
+Runtime arguments: -Dfile.encoding=UTF-8 -XX:-OmitStackTraceInFastThrow -XX:+TieredCompilation -XX:TieredStopAtLevel=1 -Dclojure.compile.path=/Users/mcphee/Documents/Year_of_Programming/lexicase-timing-study/target/default/classes -Dlexicase-timing-study.version=0.1.0-SNAPSHOT -Dclojure.debug=false
+Evaluation count : 4560 in 60 samples of 76 calls.
+      Execution time sample mean : 14.200099 ms
+             Execution time mean : 14.197543 ms
+Execution time sample std-deviation : 876.796710 µs
+    Execution time std-deviation : 884.084897 µs
+   Execution time lower quantile : 12.991008 ms ( 2.5%)
+   Execution time upper quantile : 15.499259 ms (97.5%)
+                   Overhead used : 5.950958 ns
+lexicase	100_random_values_population	100
+aarch64 Mac OS X 12.6 8 cpu(s)
+OpenJDK 64-Bit Server VM 18.0.2.1+0
+Runtime arguments: -Dfile.encoding=UTF-8 -XX:-OmitStackTraceInFastThrow -XX:+TieredCompilation -XX:TieredStopAtLevel=1 -Dclojure.compile.path=/Users/mcphee/Documents/Year_of_Programming/lexicase-timing-study/target/default/classes -Dlexicase-timing-study.version=0.1.0-SNAPSHOT -Dclojure.debug=false
+Evaluation count : 4200 in 60 samples of 70 calls.
+      Execution time sample mean : 14.498531 ms
+             Execution time mean : 14.498726 ms
+Execution time sample std-deviation : 106.603108 µs
+    Execution time std-deviation : 107.234483 µs
+   Execution time lower quantile : 14.359123 ms ( 2.5%)
+   Execution time upper quantile : 14.670366 ms (97.5%)
+                   Overhead used : 5.950958 ns
+lexicase w/o grouping	100_random_values_population	100
+aarch64 Mac OS X 12.6 8 cpu(s)
+OpenJDK 64-Bit Server VM 18.0.2.1+0
+Runtime arguments: -Dfile.encoding=UTF-8 -XX:-OmitStackTraceInFastThrow -XX:+TieredCompilation -XX:TieredStopAtLevel=1 -Dclojure.compile.path=/Users/mcphee/Documents/Year_of_Programming/lexicase-timing-study/target/default/classes -Dlexicase-timing-study.version=0.1.0-SNAPSHOT -Dclojure.debug=false
+Evaluation count : 6360 in 60 samples of 106 calls.
+      Execution time sample mean : 9.616228 ms
+             Execution time mean : 9.616282 ms
+Execution time sample std-deviation : 209.915264 µs
+    Execution time std-deviation : 214.374222 µs
+   Execution time lower quantile : 9.212829 ms ( 2.5%)
+   Execution time upper quantile : 10.005692 ms (97.5%)
+                   Overhead used : 5.950958 ns
+
+Found 2 outliers in 60 samples (3.3333 %)
+	low-severe	 1 (1.6667 %)
+	low-mild	 1 (1.6667 %)
+ Variance from outliers : 10.9534 % Variance is moderately inflated by outliers
+lexicase single pass	100_random_values_population	100
+aarch64 Mac OS X 12.6 8 cpu(s)
+OpenJDK 64-Bit Server VM 18.0.2.1+0
+Runtime arguments: -Dfile.encoding=UTF-8 -XX:-OmitStackTraceInFastThrow -XX:+TieredCompilation -XX:TieredStopAtLevel=1 -Dclojure.compile.path=/Users/mcphee/Documents/Year_of_Programming/lexicase-timing-study/target/default/classes -Dlexicase-timing-study.version=0.1.0-SNAPSHOT -Dclojure.debug=false
+Evaluation count : 6900 in 60 samples of 115 calls.
+      Execution time sample mean : 8.962437 ms
+             Execution time mean : 8.962659 ms
+Execution time sample std-deviation : 247.692086 µs
+    Execution time std-deviation : 249.464449 µs
+   Execution time lower quantile : 8.396378 ms ( 2.5%)
+   Execution time upper quantile : 9.389789 ms (97.5%)
+                   Overhead used : 5.950958 ns
+lexicase	200_random_values_population	200
+aarch64 Mac OS X 12.6 8 cpu(s)
+OpenJDK 64-Bit Server VM 18.0.2.1+0
+Runtime arguments: -Dfile.encoding=UTF-8 -XX:-OmitStackTraceInFastThrow -XX:+TieredCompilation -XX:TieredStopAtLevel=1 -Dclojure.compile.path=/Users/mcphee/Documents/Year_of_Programming/lexicase-timing-study/target/default/classes -Dlexicase-timing-study.version=0.1.0-SNAPSHOT -Dclojure.debug=false
+Evaluation count : 4020 in 60 samples of 67 calls.
+      Execution time sample mean : 15.180835 ms
+             Execution time mean : 15.184781 ms
+Execution time sample std-deviation : 292.763971 µs
+    Execution time std-deviation : 294.968972 µs
+   Execution time lower quantile : 14.923617 ms ( 2.5%)
+   Execution time upper quantile : 15.446971 ms (97.5%)
+                   Overhead used : 5.950958 ns
+
+Found 1 outliers in 60 samples (1.6667 %)
+	low-severe	 1 (1.6667 %)
+ Variance from outliers : 7.8541 % Variance is slightly inflated by outliers
+lexicase w/o grouping	200_random_values_population	200
+aarch64 Mac OS X 12.6 8 cpu(s)
+OpenJDK 64-Bit Server VM 18.0.2.1+0
+Runtime arguments: -Dfile.encoding=UTF-8 -XX:-OmitStackTraceInFastThrow -XX:+TieredCompilation -XX:TieredStopAtLevel=1 -Dclojure.compile.path=/Users/mcphee/Documents/Year_of_Programming/lexicase-timing-study/target/default/classes -Dlexicase-timing-study.version=0.1.0-SNAPSHOT -Dclojure.debug=false
+Evaluation count : 8160 in 60 samples of 136 calls.
+      Execution time sample mean : 7.304578 ms
+             Execution time mean : 7.304157 ms
+Execution time sample std-deviation : 228.891445 µs
+    Execution time std-deviation : 231.098338 µs
+   Execution time lower quantile : 6.872083 ms ( 2.5%)
+   Execution time upper quantile : 7.791050 ms (97.5%)
+                   Overhead used : 5.950958 ns
+
+Found 3 outliers in 60 samples (5.0000 %)
+	low-severe	 3 (5.0000 %)
+ Variance from outliers : 18.9594 % Variance is moderately inflated by outliers
+lexicase single pass	200_random_values_population	200
+aarch64 Mac OS X 12.6 8 cpu(s)
+OpenJDK 64-Bit Server VM 18.0.2.1+0
+Runtime arguments: -Dfile.encoding=UTF-8 -XX:-OmitStackTraceInFastThrow -XX:+TieredCompilation -XX:TieredStopAtLevel=1 -Dclojure.compile.path=/Users/mcphee/Documents/Year_of_Programming/lexicase-timing-study/target/default/classes -Dlexicase-timing-study.version=0.1.0-SNAPSHOT -Dclojure.debug=false
+Evaluation count : 9480 in 60 samples of 158 calls.
+      Execution time sample mean : 6.695545 ms
+             Execution time mean : 6.695645 ms
+Execution time sample std-deviation : 202.282795 µs
+    Execution time std-deviation : 203.954911 µs
+   Execution time lower quantile : 6.218774 ms ( 2.5%)
+   Execution time upper quantile : 7.052713 ms (97.5%)
+                   Overhead used : 5.950958 ns
+lexicase	500_random_values_population	500
+aarch64 Mac OS X 12.6 8 cpu(s)
+OpenJDK 64-Bit Server VM 18.0.2.1+0
+Runtime arguments: -Dfile.encoding=UTF-8 -XX:-OmitStackTraceInFastThrow -XX:+TieredCompilation -XX:TieredStopAtLevel=1 -Dclojure.compile.path=/Users/mcphee/Documents/Year_of_Programming/lexicase-timing-study/target/default/classes -Dlexicase-timing-study.version=0.1.0-SNAPSHOT -Dclojure.debug=false
+Evaluation count : 3420 in 60 samples of 57 calls.
+      Execution time sample mean : 17.724849 ms
+             Execution time mean : 17.726317 ms
+Execution time sample std-deviation : 193.668147 µs
+    Execution time std-deviation : 195.375112 µs
+   Execution time lower quantile : 17.342922 ms ( 2.5%)
+   Execution time upper quantile : 18.010091 ms (97.5%)
+                   Overhead used : 5.950958 ns
+
+Found 1 outliers in 60 samples (1.6667 %)
+	low-severe	 1 (1.6667 %)
+ Variance from outliers : 1.6389 % Variance is slightly inflated by outliers
+lexicase w/o grouping	500_random_values_population	500
+aarch64 Mac OS X 12.6 8 cpu(s)
+OpenJDK 64-Bit Server VM 18.0.2.1+0
+Runtime arguments: -Dfile.encoding=UTF-8 -XX:-OmitStackTraceInFastThrow -XX:+TieredCompilation -XX:TieredStopAtLevel=1 -Dclojure.compile.path=/Users/mcphee/Documents/Year_of_Programming/lexicase-timing-study/target/default/classes -Dlexicase-timing-study.version=0.1.0-SNAPSHOT -Dclojure.debug=false
+Evaluation count : 10620 in 60 samples of 177 calls.
+      Execution time sample mean : 5.977338 ms
+             Execution time mean : 5.974098 ms
+Execution time sample std-deviation : 292.382625 µs
+    Execution time std-deviation : 293.279358 µs
+   Execution time lower quantile : 5.530242 ms ( 2.5%)
+   Execution time upper quantile : 6.779416 ms (97.5%)
+                   Overhead used : 5.950958 ns
+
+Found 5 outliers in 60 samples (8.3333 %)
+	low-severe	 1 (1.6667 %)
+	low-mild	 4 (6.6667 %)
+ Variance from outliers : 35.2139 % Variance is moderately inflated by outliers
+lexicase single pass	500_random_values_population	500
+aarch64 Mac OS X 12.6 8 cpu(s)
+OpenJDK 64-Bit Server VM 18.0.2.1+0
+Runtime arguments: -Dfile.encoding=UTF-8 -XX:-OmitStackTraceInFastThrow -XX:+TieredCompilation -XX:TieredStopAtLevel=1 -Dclojure.compile.path=/Users/mcphee/Documents/Year_of_Programming/lexicase-timing-study/target/default/classes -Dlexicase-timing-study.version=0.1.0-SNAPSHOT -Dclojure.debug=false
+Evaluation count : 12000 in 60 samples of 200 calls.
+      Execution time sample mean : 5.263772 ms
+             Execution time mean : 5.264606 ms
+Execution time sample std-deviation : 172.628575 µs
+    Execution time std-deviation : 175.025856 µs
+   Execution time lower quantile : 4.983528 ms ( 2.5%)
+   Execution time upper quantile : 5.724182 ms (97.5%)
+                   Overhead used : 5.950958 ns
+
+Found 3 outliers in 60 samples (5.0000 %)
+	low-severe	 3 (5.0000 %)
+ Variance from outliers : 20.5606 % Variance is moderately inflated by outliers
+lexicase	1000_random_values_population	1000
+aarch64 Mac OS X 12.6 8 cpu(s)
+OpenJDK 64-Bit Server VM 18.0.2.1+0
+Runtime arguments: -Dfile.encoding=UTF-8 -XX:-OmitStackTraceInFastThrow -XX:+TieredCompilation -XX:TieredStopAtLevel=1 -Dclojure.compile.path=/Users/mcphee/Documents/Year_of_Programming/lexicase-timing-study/target/default/classes -Dlexicase-timing-study.version=0.1.0-SNAPSHOT -Dclojure.debug=false
+Evaluation count : 2640 in 60 samples of 44 calls.
+      Execution time sample mean : 22.872658 ms
+             Execution time mean : 22.874363 ms
+Execution time sample std-deviation : 397.418478 µs
+    Execution time std-deviation : 402.894128 µs
+   Execution time lower quantile : 22.062593 ms ( 2.5%)
+   Execution time upper quantile : 23.585376 ms (97.5%)
+                   Overhead used : 5.950958 ns
+lexicase w/o grouping	1000_random_values_population	1000
+aarch64 Mac OS X 12.6 8 cpu(s)
+OpenJDK 64-Bit Server VM 18.0.2.1+0
+Runtime arguments: -Dfile.encoding=UTF-8 -XX:-OmitStackTraceInFastThrow -XX:+TieredCompilation -XX:TieredStopAtLevel=1 -Dclojure.compile.path=/Users/mcphee/Documents/Year_of_Programming/lexicase-timing-study/target/default/classes -Dlexicase-timing-study.version=0.1.0-SNAPSHOT -Dclojure.debug=false
+Evaluation count : 12120 in 60 samples of 202 calls.
+      Execution time sample mean : 4.929944 ms
+             Execution time mean : 4.929736 ms
+Execution time sample std-deviation : 182.147287 µs
+    Execution time std-deviation : 183.678598 µs
+   Execution time lower quantile : 4.618380 ms ( 2.5%)
+   Execution time upper quantile : 5.261234 ms (97.5%)
+                   Overhead used : 5.950958 ns
+lexicase single pass	1000_random_values_population	1000
+aarch64 Mac OS X 12.6 8 cpu(s)
+OpenJDK 64-Bit Server VM 18.0.2.1+0
+Runtime arguments: -Dfile.encoding=UTF-8 -XX:-OmitStackTraceInFastThrow -XX:+TieredCompilation -XX:TieredStopAtLevel=1 -Dclojure.compile.path=/Users/mcphee/Documents/Year_of_Programming/lexicase-timing-study/target/default/classes -Dlexicase-timing-study.version=0.1.0-SNAPSHOT -Dclojure.debug=false
+Evaluation count : 12600 in 60 samples of 210 calls.
+      Execution time sample mean : 4.857289 ms
+             Execution time mean : 4.857856 ms
+Execution time sample std-deviation : 183.689187 µs
+    Execution time std-deviation : 187.277478 µs
+   Execution time lower quantile : 4.510274 ms ( 2.5%)
+   Execution time upper quantile : 5.219169 ms (97.5%)
+                   Overhead used : 5.950958 ns
+
+Found 1 outliers in 60 samples (1.6667 %)
+	low-severe	 1 (1.6667 %)
+ Variance from outliers : 25.4206 % Variance is moderately inflated by outliers
