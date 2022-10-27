@@ -55,6 +55,27 @@
                        survivors)
                (rest cases))))))
 
+(defn lexicase-single-pass
+  [pop]
+  (loop [survivors pop
+         cases (shuffle (range (count (:errors (first pop)))))]
+    (if (or (empty? cases)
+            (empty? (rest survivors)))
+      (rand-nth survivors)
+      (recur
+       (reduce
+        (fn [candidates individual]
+          (let [best-error (nth (:errors (first candidates)) (first cases))
+                this-error (nth (:errors individual) (first cases))]
+            (if (< this-error best-error)
+              (list individual)
+              (if (= this-error best-error)
+                (conj candidates individual)
+                candidates))))
+        (list (first survivors))
+        (rest survivors))
+       (rest cases)))))
+
 (defn check-pop
   [pop pop-size len]
   (assert (= (count pop) pop-size))
